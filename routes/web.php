@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('/inertia',  function () {
     return Inertia::render('Welcome');
 });
+
+Route::get('/inertia/page', function () {
+    return Inertia::render('Page');
+});

@@ -1,11 +1,18 @@
 <template>
   <h1>Hello, Vue</h1>
-  <p>This is from inertia Page</p>
+  <p>This is from inertia Page. visit another page
+  </p>
+
+   <Link href="/inertia/page">Page</Link>
 </template>
 
 <script>
-export default {
+import { Link } from '@inertiajs/inertia-vue3'
 
+export default {
+  components: {
+    Link
+  }
 }
 </script>
 

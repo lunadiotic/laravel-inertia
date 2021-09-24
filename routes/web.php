@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 Route::get('/inertia',  function () {
     return Inertia::render('Welcome');
-});
+})->name('home');
 
 Route::get('/inertia/page', function () {
     return Inertia::render('Page');
-});
+})->name('page');
